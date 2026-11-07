@@ -1,0 +1,13 @@
+---
+# Rangelight's repo profile (https://github.com/rangelight/rangelight, api/jsonschema/rangelight.v1alpha1.schema.json).
+# Minimal on purpose: the storefront entry point. Preview environments (argo) and tests come later.
+apiVersion: "rangelight.dev/v1alpha1"
+kind: "PreviewProfile"
+metadata:
+  name: "otel-demo"
+spec:
+  services:
+    - name: "frontend-proxy"
+      serviceName: "frontend-proxy"
+      port: 8080
+      expose: true
